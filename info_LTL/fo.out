@@ -1,0 +1,43 @@
+DRA v2 explicit
+Comment: "Safra[NBA=4]"
+States: 6
+Acceptance-Pairs: 1
+Start: 5
+AP: 2 "a" "b"
+---
+State: 0
+Acc-Sig: +0
+0
+1
+0
+0
+State: 1
+Acc-Sig: +0
+2
+2
+0
+0
+State: 2
+Acc-Sig: +0
+3
+3
+0
+0
+State: 3
+Acc-Sig: +0
+4
+4
+0
+0
+State: 4
+Acc-Sig: -0
+4
+4
+4
+4
+State: 5
+Acc-Sig:
+0
+1
+0
+0
