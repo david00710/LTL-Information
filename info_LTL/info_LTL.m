@@ -5,10 +5,12 @@ function info=info_LTL(formula, N_p)
 % Outputs:
 % info  information gain of the LTL formula
 % Zhe Xu UT Austin 03/10/2019
+% Function create_DRA from Xu Chu (Dennis) Ding, Stephen L. Smith, Calin Belta, and Daniela Rus of Boston University
+
               
 if exist(['./' formula '.ltl'], 'file')
     if isunix
-        dos(['/Users/xuz/Dropbox/austin/recent/info_LTL/bin/ltl2dstar --ltl2nba=spin:./bin/ltl2ba --output=automaton ./' formula '.ltl ./' formula '.out']);
+        dos(['bin/ltl2dstar --ltl2nba=spin:./bin/ltl2ba --output=automaton ./' formula '.ltl ./' formula '.out']);
     elseif ispc
         dos(['bin/ltl2dstar.exe --ltl2nba=spin:./bin/ltl2ba.exe --output=automaton ./' formula '.ltl ./' formula '.out']);
     else
