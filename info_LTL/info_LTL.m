@@ -4,6 +4,7 @@ function info=info_LTL(formula, N_p)
 % N_p  number of predicates
 % Outputs:
 % info  information gain of the LTL formula
+% Zhe Xu UT Austin 03/10/2019
               
 if exist(['./' formula '.ltl'], 'file')
     if isunix
